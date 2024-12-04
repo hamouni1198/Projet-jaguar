@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Symbols:wght@100..900&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    overflow-x: hidden; 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{ 
+    list-style: none;
+}
+nav{
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%, rgba(31,69,77,1) 100%);
+color: white;
+display: flex;
+position: fixed;
+width: 100%;
+max-height: 80px;
+overflow: hidden;
+top: 0;
+justify-content: space-between;
+border-bottom: 1px solid black;
+z-index: 100;
+font-family: "Cinzel", serif;
+font-optical-sizing: auto;
+font-style: normal;
+box-shadow: black 0px 0px 10px 0px;
+}
+
+nav .nav{
+    padding-right: 50px;
+}
+nav .nav ul {
+display: flex;
+justify-content: space-around;
+gap: 110px;
+font-size: 18px;
+font-weight: 700;
+padding: 30px;
+}
+
+nav .nav ul li{
+    cursor: pointer;
+    transition: color 0.3s;   
+    list-style: none;
+    animation: slideIn .5s forwards;
+}
+
+nav .nav ul li:nth-child(1){
+    animation-delay: 0s;
+}
+nav .nav ul li:nth-child(2){
+    animation-delay: .5s;
+}
+nav .nav ul li:nth-child(3){
+    animation-delay: 1s;
+}
+nav .nav ul li:nth-child(4){
+    animation-delay: 1.5s;
+}
+
+nav .nav ul li a {
+    position: relative;
+    padding: 1rem 0;
+    margin: 0 3rem;
+    letter-spacing: 2px;
+    animation-duration: 2s;
+    animation-name: navanim;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+nav .nav ul li:nth-child(1) a {
+    animation-delay: 0s; 
+}
+
+nav .nav ul li:nth-child(2) a {
+    animation-delay: 0.3s; 
+}
+
+nav .nav ul li:nth-child(3) a {
+    animation-delay: 0.5s; 
+}
+
+nav .nav ul li:nth-child(4) a {
+    animation-delay: 0.7s; 
+}
+@keyframes navanim {
+    from {
+        right: -1100%;
+    }
+    to{
+        right: 0%;
+    }
+  }
+nav .nav ul li a:last-child{
+    margin-right: 0;
+}
+
+nav .nav ul li a::before,
+nav .nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #8f8f8f;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+nav .nav ul li a::before{
+    top: 0;
+    transform-origin: left;
+}
+nav .nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+.overlay{
+    background-color: rgba(77, 77, 77, 0.507);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: opacity 650ms;
+    transform: scale(0);
+    opacity: 0;
+    display: none;
+}
+
+nav .nav ul li a:hover::before,
+nav .nav ul li a:hover::after{
+    transform: scaleX(1);
+}
+nav .logo{
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+
+}
+nav .logo img{
+    width: 150px;
+    height: 90%;
+    animation-duration: 0.5s;
+    animation-name: logo;
+    animation-timing-function:linear;
+    animation-fill-mode: both; 
+    animation-delay: 2.5s; 
+}
+@keyframes logo {
+    from {
+    margin-left:-100%;   
+
+    }
+    to{
+        margin-left: 0%;
+    }
+  }
+main {
+    position: relative;
+    height: 200vh;
+}
+
+main .frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; 
+    width: 100%;
+}
+
+main .frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .image {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 100vh;
+}
+
+main .image .gauche {
+    height: 668px;
+    width: 500px;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 1s ease-out;
+}
+
+main .image .gauche img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    animation-duration: 2s;
+    animation-name: slidei;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range-start:cover 0%;
+    animation-range-end:cover 30%;
+
+}
+
+@keyframes slidei {
+    from {
+        margin-left: -100%;
+        opacity: 0;
+    }
+    to {
+        margin-right: 0%;
+        opacity: 1;
+    }
+}
+
+main .image .droit {
+    height: 668px;
+    width: 500px;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+main .image .droit img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range-start:cover 0%;
+    animation-range-end:cover 30%;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+
+main .image .centre {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 675px;
+    cursor: pointer;
+}
+
+main .image .centre .ve1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 329px;
+    width: 500px;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 1s ease-out;
+}
+
+main .image .centre .ve1 img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-name: cve1;
+    animation-delay: 1s;
+    animation-timeline: view();
+    animation-range-start:cover 0%;
+    animation-range-end:cover 30%;
+}
+
+@keyframes cve1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main .image .centre .ve2 {
+    height: 329px;
+    width: 500px;
+    opacity: 0;
+    border-radius: 10px;
+    
+}
+
+
+main .image .centre .ve2 img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    animation-duration: 2s;
+    animation-name: cve2;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    animation-timeline: view();
+    animation-range-start:cover 0%;
+    animation-range-end:cover 30%;
+}
+@keyframes cve2 {
+    from {
+        margin-bottom: 100%;
+        opacity: 0;
+    }
+    to {
+        margin-bottom: 0%;
+        opacity: 1;
+    }
+}
+main .affiche  {
+    margin-top: 50px;
+background-color: #f0f0f0;
+padding-top: 20px;
+
+}
+main .affiche .voiture img{
+    border-radius: 10px;
+    width: 97%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    animation-duration: 2s;
+    animation-name: imgV;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    animation-timeline: view();
+    animation-range-start:cover 0%;
+    animation-range-end:cover 30%;
+}
+@keyframes imgV {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+main .affiche .info{
+    padding: 80px;
+}
+main .affiche .info h1{
+    font-family: "Cinzel", serif;
+
+   margin-bottom: auto;
+   margin-top: auto;
+   animation-duration: 2s;
+   animation-name: slidei;
+   animation-timing-function: ease-in-out;
+   animation-fill-mode: both;
+   animation-timeline: view();
+   animation-range-start:cover 0%;
+   animation-range-end:cover 30%;
+}
+main .affiche .info p{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 45px;
+    animation-duration: 2s;
+    animation-name: slidei;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range-start:cover 0%;
+    animation-range-end:cover 30%;
+}
+main .cle{
+    padding-top: 90px;
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 18%, rgba(43,43,43,1) 64%, rgba(149,149,149,1) 100%, rgba(36,36,36,1) 100%);
+    text-align: center;
+}
+main .cle button{
+width: 40px;
+height: 40px;
+border-radius: 90px;
+border: none;
+background-color: #b0b0b0;
+justify-content: center;
+align-items: center;
+display: flex;
+transition: background-color 1s;
+cursor: pointer;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+main .cle button:hover{
+    background-color: #8f8f8f;
+}
+main .cle svg{
+    fill: rgb(255, 255, 255);
+
+}
+main .cle .tout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+main .cle .t{
+    margin-top: 90px;
+}
+main .cle h1{
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 300;
+    animation-duration: 2s;
+    animation-name: info;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range-start:cover 0%;
+    animation-range-end:cover 30%;
+}
+main .cle .information{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 2s;
+    animation-name: info;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range-start:cover 0%;
+    animation-range-end:cover 30%;
+}
+@keyframes info {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+main .cle  .titre{
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Poppins';
+}
+main .cle .d1{
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+main .cle  .d1 span{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Poppins';
+}
+main .cle  .d2{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+main .cle  .vide{
+    color: black;
+}
+main .cle .information .puissance{
+    width: 25%;
+    border-right: 0.5px solid rgb(130, 127, 127);
+    line-height: 70px;
+    padding: 0px;
+}
+main .cle .information .acce{
+    width: 25%;
+    border-right: 0.5px solid rgb(130, 127, 127);
+    line-height: 70px;
+    padding: 0px;
+
+}
+main .cle .information .couple{
+    width: 25%;
+    line-height: 70px;
+
+}
+main .d1{
+    font-size: 10px;
+}
+.show{
+    width: 80%;
+}
+.show img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation-duration: 2s;
+    animation-name: ime;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    animation-timeline: view();
+    animation-range-start:cover 0%;
+    animation-range-end:cover 30%;
+}
+
+.show img.active {
+    display: block;
+    animation: im 2s ease-in-out;
+
+}
+@keyframes im {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.part2{
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    width: 90%;
+}
+
+.part2 form input {
+    width: 500px;
+    height: 20px;
+    margin-top: 10px;
+    background-color: rgb(226, 225, 225);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Gloock', serif;
+    font-size: 17px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.part2 form textarea{
+    width:500px;
+    height: 167px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: rgb(226, 225, 225);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Gloock', serif;
+    font-size: 17px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+.part2 form input:hover{
+    font-size: 19px;
+}
+.button3{
+    display: flex;
+    margin: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+.button3 .bu3 button{
+    width: 90px;
+    height: 50px;
+    background-color: rgb(204, 201, 201);
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-size: 17px;
+    padding: 10px;
+}
+/*responsev*/
+@media screen and (max-width: 414px){
+    nav .nav{
+        display: none;
+        width: 100%;
+    }
+    main .frame {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        z-index: -1; 
+        width: 100%;
+        height: 50%;
+    }
+    
+    main .frame video {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+}
