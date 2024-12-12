@@ -34,7 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
         updateImages();
     });
 
-    updateImages(); // Initial update to display the first image
+    updateImages(); 
 });
 
-    
+document.addEventListener('DOMContentLoaded', function () {
+    var video = document.getElementById('myVideo');
+    video.play().catch(function (error) {
+      console.error('Autoplay bloqué : ', error);
+    });
+  });
