@@ -628,15 +628,15 @@ main .d1{
         top: 80px;
     }
     main .frame video{
-        width: 100%;
+        width: 100vh;
         object-fit: cover;
-        height: 100%; 
+        height: 100vh;
         transform: rotate(0deg) scale(1.005);
     }
     
     
     main .image {
-        margin-top: 62vh;
+        margin-top: 103vh;
         justify-content: space-evenly;
         gap: 3px;
     }
