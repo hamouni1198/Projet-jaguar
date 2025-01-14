@@ -625,7 +625,8 @@ main .d1{
         width: 100%;
     }
     main .frame {
-       display: none;
+        top: 80px;
+
     }
     
     main .frame video {
@@ -633,7 +634,7 @@ main .d1{
         object-fit: cover;
     }
     main .image {
-        margin-top: 16vh;
+        margin-top: 62vh;
         justify-content: space-evenly;
         gap: 3px;
     }
