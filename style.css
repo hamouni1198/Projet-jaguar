@@ -18,6 +18,7 @@ li{
 nav{
 background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%, rgba(31,69,77,1) 100%);
 color: white;
+display: flex;
 position: fixed;
 width: 100%;
 max-height: 80px;
@@ -26,7 +27,7 @@ top: 0;
 justify-content: space-between;
 border-bottom: 1px solid black;
 z-index: 100;
-font-family: sans-serif;
+    font-family: sans-serif;
 font-weight: 100;
 font-style: normal;
 font-optical-sizing: auto;
@@ -621,13 +622,7 @@ main .d1{
         width: 100%;
     }
     main .frame {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        right: 0;
-        z-index: -1; 
-        width: 100%;
-        height: 50%;
+       display: none;
     }
     
     main .frame video {
@@ -635,14 +630,46 @@ main .d1{
         object-fit: cover;
     }
     main .image {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        gap: 20px;
-        margin-top: 100vh;
+        margin-top: 16vh;
+        justify-content: space-evenly;
+        gap: 3px;
     }
-    .affiche{
-        width: 100%;
+    main .image .droit{
+        height: 302px;
+        width: 225px;
+    }
+    main .image .centre{
+        height: 305px;
+
+    }
+    main .image .centre .ve1{
+        height: 149px;
+        width: 180px;
+    }
+    main .image .centre .ve2{
+        height: 149px;
+        width: 180px;
+    }
+    main .image .gauche{
+        height: 302px;
+        width: 225px;
+    }
+    main .affiche{
+        margin-top: 18px;
+    }
+    .affiche .desc{
+        margin-top: 0px;
+    }
+    .affiche .desc p {
+        width: 90%;
+    }
+    main .affiche .info{
+        width: 84%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main .affiche .info h1{
+
     }
     .part2{
         display: none;
