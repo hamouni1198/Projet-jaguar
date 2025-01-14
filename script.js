@@ -43,3 +43,21 @@ document.addEventListener('DOMContentLoaded', function () {
       console.error('Autoplay bloqué : ', error);
     });
   });
+
+
+  function updateVideoSource() {
+    const video = document.getElementById("myVideo");
+    const source = video.querySelector("source");
+
+    if (window.matchMedia("(max-width: 480px)").matches) {
+      source.src = "media/Jaguar - Type 00. An original work of art..mp4"; 
+    } else {
+      source.src = "media/Jaguar Type 00  An Original Work of Art.mp4"; 
+    }
+
+    video.load();
+  }
+
+  updateVideoSource();
+
+  window.addEventListener("resize", updateVideoSource);

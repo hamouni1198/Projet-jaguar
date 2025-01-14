@@ -626,13 +626,19 @@ main .d1{
     }
     main .frame {
         top: 80px;
-
     }
-    
-    main .frame video {
+    main .frame video{
         width: 100%;
         object-fit: cover;
+        height: 100%; 
+        position: absolute;
+         background-color: black; 
+         top: 0%;
+          left: 0%; 
+          transform: rotate(0deg) scale(1.005);
     }
+    
+    
     main .image {
         margin-top: 62vh;
         justify-content: space-evenly;
