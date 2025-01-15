@@ -181,8 +181,8 @@ main .frame {
 }
 
 main .frame video {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -633,27 +633,13 @@ main .d1{
         transform: rotate(0deg) scale(1.005);
     }
     
-    
     main .image {
         margin-top: 60rem;
         justify-content: space-evenly;
         gap: 3px;
         animation-duration: 2s;
-        animation-name: imganimation;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: both;
-        animation-timeline: view();
-        animation-range-start:cover 0%;
-        animation-range-end:cover 30%;
     }
-    @keyframes imganimation {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
+  
     main .image .droit{
         height: 302px;
         width: 225px;

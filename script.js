@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
       source.src = "media/Jaguar Type 00  An Original Work of Art.mp4"; 
     }
 
-    video.load();
   }
 
   updateVideoSource();
