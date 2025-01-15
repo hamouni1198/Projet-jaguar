@@ -284,14 +284,16 @@ main .image .centre .ve1 img {
     border-radius: 10px;
     width: 100%;
     height: 100%;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: cve1;
+    -webkit-animation-delay: 1s;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-fill-mode: both;
     animation-name: cve1;
     animation-delay: 1s;
-    animation-timeline: view();
-    animation-range-start:cover 0%;
-    animation-range-end:cover 30%;
 }
 
 @keyframes cve1 {
@@ -618,6 +620,7 @@ main .d1{
     font-family: 'Cinzel';
 
 }
+
 /*responsev*/
 @media (max-width: 480px) {
     nav{
