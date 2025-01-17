@@ -214,7 +214,8 @@ main .image .gauche img {
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
     animation-timeline: view();
-
+    animation-range-start:cover 0%;
+    animation-range-end:cover 30%;
 
 }
 
@@ -370,7 +371,8 @@ main .affiche .info{
 main .affiche .info h1{
     font-family: "Pontano Sans", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;   margin-bottom: auto;
+    font-style: normal;  
+     margin-bottom: auto;
    margin-top: auto;
    animation-duration: 2s;
    animation-name: slidei;
@@ -603,11 +605,18 @@ main .d1{
     margin-bottom: 50px;
 }
 .affiche .desc h1{
-    font-family: "Bebas Neue", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Pontano Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;  
     margin-bottom: 54px;
-
+    animation-duration: 2s;
+    animation-name: imgV;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    animation-timeline: view();
+    animation-range-start:cover 0%;
+    animation-range-end:cover 30%;
 }
 .affiche .desc p{
     width: 50%;
@@ -615,6 +624,16 @@ main .d1{
     margin-right: auto;
     text-align:revert;
     font-family: 'Cinzel';
+    font-weight: 400;
+    font-style: normal;
+    animation-duration: 2s;
+    animation-name: imgV;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    animation-timeline: view();
+    animation-range-start:cover 0%;
+    animation-range-end:cover 30%;
 
 }
 
