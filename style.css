@@ -660,6 +660,8 @@ main .d1{
     main .image {
         margin-top: 60rem;
         animation-duration: 2s;
+        justify-content: space-evenly;
+        gap: 3px;
     }
     main .cle .tout {
         gap: 15px;
@@ -705,12 +707,12 @@ main .d1{
         position: absolute;
         left: 8px;
         z-index: 100;
-
+        bottom: -13%;
     }
     .cle .tout .breght button{
         position: absolute;
         right: 8px;
-
+        bottom: -13%;
     }
     .show{
         width: 100%;
