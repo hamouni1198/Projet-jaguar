@@ -50,13 +50,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const source = video.querySelector("source");
 
     if (window.matchMedia("(max-width: 480px)").matches) {
-      source.src = "media/Jaguar - Type 00. An original work of art..mp4"; 
+        source.src = "media/Jaguar - Type 00. An original work of art..mp4"; 
     } else {
-      source.src = "media/Jaguar Type 00  An Original Work of Art.mp4"; 
+        source.src = "media/Jaguar Type 00  An Original Work of Art.mp4"; 
     }
 
-  }
-
-  updateVideoSource();
-
-  window.addEventListener("resize", updateVideoSource);
+}

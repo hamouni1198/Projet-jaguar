@@ -192,7 +192,7 @@ main .frame video {
 main .image {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 20px;
     margin-top: 100vh;
 }
@@ -659,11 +659,12 @@ main .d1{
     
     main .image {
         margin-top: 60rem;
-        justify-content: space-evenly;
-        gap: 3px;
         animation-duration: 2s;
     }
-  
+    main .cle .tout {
+        gap: 15px;
+    }
+
     main .image .droit{
         height: 302px;
         width: 225px;
