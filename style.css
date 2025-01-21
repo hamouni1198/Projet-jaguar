@@ -670,6 +670,7 @@ main .d1{
     main .image .droit{
         height: 302px;
         width: 225px;
+        display: none;
     }
     main .image .centre{
         height: 305px;
@@ -677,12 +678,12 @@ main .d1{
     }
     main .image .centre .ve1{
         height: 149px;
-        width: 180px;
+        width: 246px;
     }
   
     main .image .centre .ve2{
         height: 149px;
-        width: 180px;
+        width: 246px;
     }
     main .image .gauche{
         height: 302px;
