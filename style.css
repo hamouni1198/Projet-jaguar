@@ -662,6 +662,9 @@ main .d1{
         animation-duration: 2s;
         justify-content: space-evenly;
         gap: 3px;
+        margin-left: 10px;
+        margin-right: 10px;
+
     }
     main .cle .tout {
         gap: 15px;
@@ -674,6 +677,7 @@ main .d1{
     }
     main .image .centre{
         height: 305px;
+        margin-right: 20px;
 
     }
     main .image .centre .ve1{
@@ -708,12 +712,12 @@ main .d1{
         position: absolute;
         left: 8px;
         z-index: 100;
-        bottom: -13%;
+        bottom: -15%;
     }
     .cle .tout .breght button{
         position: absolute;
         right: 8px;
-        bottom: -13%;
+        bottom: -15%;
     }
     .show{
         width: 100%;
