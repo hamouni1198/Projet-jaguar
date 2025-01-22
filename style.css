@@ -731,7 +731,7 @@ main .d1{
         padding: 10px;
         width: 388px;
         height: 100px;
-        margin-left: -3px;
+        margin-left: 0px;
         margin-top: 4px;
         font-size: x-small;
     }
@@ -760,7 +760,9 @@ main .d1{
         font-size: 27px;
     }
     main .cle .titre{
-        font-size: 8px;
+        font-size: 7px;
+        font-weight: 500;
+
     }
     main .cle .information{
         margin-bottom: 116px;
