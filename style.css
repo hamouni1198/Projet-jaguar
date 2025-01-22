@@ -664,7 +664,7 @@ main .d1{
         gap: 3px;
         margin-left: 10px;
         margin-right: 10px;
-
+        width: 96%;
     }
     main .cle .tout {
         gap: 15px;
@@ -673,12 +673,9 @@ main .d1{
     main .image .droit{
         height: 302px;
         width: 225px;
-        display: none;
     }
     main .image .centre{
         height: 305px;
-        margin-right: 20px;
-
     }
     main .image .centre .ve1{
         height: 149px;
@@ -712,21 +709,38 @@ main .d1{
         position: absolute;
         left: 8px;
         z-index: 100;
-        bottom: -15%;
+        bottom: -17%;
     }
     .cle .tout .breght button{
         position: absolute;
         right: 8px;
-        bottom: -15%;
+        bottom: -17%;
     }
     .show{
         width: 100%;
 
     }
-    main .affiche .info h1{
-
+    .part2 form input{
+        width: 386px;
+        height: 15px;
+        margin: 4px;
+        padding: 11px;
+        font-size: x-small;
+    }
+    .part2 form textarea{
+        padding: 10px;
+        width: 385px;
+        height: 100px;
+        margin-left: 2px;
+        margin-top: 4px;
+        font-size: x-small;
     }
     .part2{
-        display: none;
+        display: inline;
+        margin-top: 200px;
+    }
+    .button3 .bu3 button{
+        height: 44px;
+
     }
 }
