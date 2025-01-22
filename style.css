@@ -709,12 +709,12 @@ main .d1{
         position: absolute;
         left: 8px;
         z-index: 100;
-        bottom: -17%;
+        bottom: -16%;
     }
     .cle .tout .breght button{
         position: absolute;
         right: 8px;
-        bottom: -17%;
+        bottom: -16%;
     }
     .show{
         width: 100%;
@@ -729,9 +729,9 @@ main .d1{
     }
     .part2 form textarea{
         padding: 10px;
-        width: 385px;
+        width: 388px;
         height: 100px;
-        margin-left: 2px;
+        margin-left: -3px;
         margin-top: 4px;
         font-size: x-small;
     }
@@ -743,4 +743,27 @@ main .d1{
         height: 44px;
 
     }
+    main .cle .information .acce{
+        width: 34%;
+    }
+    main .cle .information .puissance{
+        width: 34%;
+    }
+    main .cle .information .couple{
+        width: 34%;
+    }
+    main .cle .d2{
+        font-size: 8px;
+    }
+    
+    main .cle .d1{
+        font-size: 27px;
+    }
+    main .cle .titre{
+        font-size: 8px;
+    }
+    main .cle .information{
+        margin-bottom: 116px;
+    }
+    
 }
